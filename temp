@@ -1,0 +1,36 @@
+<div class="row mb-4 g-3 m-0">
+        <div class="col-md-9">
+          <label for="search-input" class="form-label visually-hidden"
+            >جستجو</label
+          >
+          <div class="input-group">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input
+              type="text"
+              id="search-input"
+              class="form-control"
+              placeholder="جستجوی بازی..."
+            />
+            <button
+              id="clear-search"
+              class="btn btn-outline-secondary"
+              type="button"
+              aria-label="پاک کردن جستجو"
+              title="پاک کردن جستجو"
+              data-bs-toggle="tooltip"
+              data-bs-placement="top"
+            >
+              <i class="bi bi-x-lg"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="category-filter" class="form-label visually-hidden"
+            >دسته‌بندی</label
+          >
+          <select id="category-filter" class="form-select">
+            <option value="all">همه دسته‌ها</option>
+            <!-- دسته‌ها به صورت خودکار پر می‌شوند -->
+          </select>
+        </div>
+      </div>

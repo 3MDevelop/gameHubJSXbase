@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 m-0">
+      <header class="text-center py-4 headerBorder">
+        <h1 class="display-5 fw-bold color-main mt-5">Game Gallery</h1>
+      </header>
+
+      <div id="stats" class="mx-auto w-75 alert alert-info my-4">
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center"
+        >
+          <div><span id="games-count">0</span> بازی یافت شد</div>
+          <div class="d-flex align-items-center gap-2">
+            <button
+              id="view-grid"
+              class="btn btn-sm btn-outline-secondary active bi bi-grid"
+            >
+              <span class="visually-hidden">Grid view</span>
+            </button>
+
+            <button
+              id="view-list"
+              class="btn btn-sm btn-outline-secondary bi bi-list-ul"
+            >
+              <span class="visually-hidden">List view</span>
+            </button>
+            <div class="hDivider"></div>
+            <button
+              id="scan-btn"
+              class="btn btn-sm btn-outline-primary bi bi-arrow-repeat"
+            >
+              <span class="visually-hidden">Scan List</span>
+            </button>
+            <button
+              id="export-btn"
+              class="btn btn-sm btn-outline-success bi bi-download"
+            >
+              <span class="visually-hidden">Export List</span>
+            </button>
+            <div class="hDivider"></div>
+            <button
+              id="scan-btn"
+              class="btn btn-sm btn-outline-secondary bi bi-tags-fill"
+            >
+              <span class="visually-hidden">Scan List</span>
+            </button>
+            <button
+              id="export-btn"
+              class="btn btn-sm btn-outline-secondary bi bi-search"
+            >
+              <span class="visually-hidden">Export List</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- game list Loading -->
+
+      <div id="loading-spinner" class="text-center my-5">
+        <div class="spinner-border text-primary" role="status">
+          <span class="visually-hidden">در حال بارگذاری...</span>
+        </div>
+        <p class="mt-2">در حال اسکن پوشه بازی‌ها...</p>
+      </div>
+
+      <!-- Game list with bootstrap cards -->
+      <div
+        id="games-container"
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 text-center bg-danger"
+      >
+        <!-- Game Items Shows inHeare -->
+      </div>
+
+      <!-- nogame list found -->
+      <div id="no-games" class="text-center py-5">
+        <i class="bi bi-emoji-frown text-muted"></i>
+        <h4 class="mt-3">بازی‌ای یافت نشد</h4>
+        <p class="text-muted">معیارهای جستجوی شما با هیچ بازی مطابقت ندارد</p>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

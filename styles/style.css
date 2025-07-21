@@ -1,0 +1,22 @@
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    direction: rtl;
+    background-color: #1F1D19;
+    color: whitesmoke !important;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.color-main{
+    color: #95C208 !important;
+}
+
+.headerBorder{
+    border-top: 8px solid #95C208;
+}
+
+.hDivider{
+    width: 1px;
+    height: 30px;
+    background-color: #95C208;
+}
