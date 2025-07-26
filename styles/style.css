@@ -11,6 +11,10 @@ body {
     color: #95C208 !important;
 }
 
+.bg-green{
+    background-color: #95C208 !important;
+}
+
 .headerBorder{
     border-top: 8px solid #95C208;
 }

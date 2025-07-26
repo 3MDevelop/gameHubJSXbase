@@ -54,17 +54,67 @@
               <span class="visually-hidden">Export List</span>
             </button>
             <div class="hDivider"></div>
-            <button
-              id="scan-btn"
-              class="btn btn-sm btn-outline-secondary bi bi-tags-fill"
-            >
-              <span class="visually-hidden">Scan List</span>
-            </button>
+            <div class="dropdown">
+              <button
+                id="tag-btn"
+                class="btn btn-sm btn-outline-secondary bi bi-tags-fill"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="visually-hidden">tag list</span>
+              </button>
+
+              <ul
+                class="dropdown-menu mt-2 text-white"
+                style="width: 300px !important"
+              >
+                <li
+                  class="dropdown-item d-flex justify-content-between"
+                  href="#"
+                >
+                  <span class="badge text-bg-primary rounded-pill">14</span>
+                  <label class="form-check-label me-auto ms-2" for="firstCheckbox"
+                    >GameType 1</label
+                  >
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="firstCheckbox"
+                  />
+                </li>
+                <li class="dropdown-item d-flex justify-content-between" href="#">
+                  <span class="badge text-bg-primary rounded-pill">8</span>
+                  <label class="form-check-label me-auto ms-2" for="firstCheckbox"
+                    >GameType 2</label
+                  >
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="firstCheckbox"
+                  />
+                </li>
+                <li class="dropdown-item d-flex justify-content-between" href="#">
+                  <span class="badge text-bg-primary rounded-pill">22</span
+                  ><label class="form-check-label me-auto ms-2" for="firstCheckbox"
+                    >GameType 3</label
+                  >
+                  <input
+                    class="form-check-input me-1"
+                    type="checkbox"
+                    value=""
+                    id="firstCheckbox"
+                  />
+                </li>
+              </ul>
+            </div>
             <button
               id="export-btn"
               class="btn btn-sm btn-outline-secondary bi bi-search"
             >
-              <span class="visually-hidden">Export List</span>
+              <span class="visually-hidden">Search Modal</span>
             </button>
           </div>
         </div>
