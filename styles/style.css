@@ -24,3 +24,6 @@ body {
     height: 30px;
     background-color: #95C208;
 }
+#gTagMenu{
+    width: 300px !important
+}

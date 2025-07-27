@@ -64,17 +64,15 @@
               >
                 <span class="visually-hidden">tag list</span>
               </button>
-
-              <ul
-                class="dropdown-menu mt-2 text-white"
-                style="width: 300px !important"
-              >
+              <ul id="gTagMenu" class="dropdown-menu mt-2 text-white">
                 <li
                   class="dropdown-item d-flex justify-content-between"
                   href="#"
                 >
                   <span class="badge text-bg-primary rounded-pill">14</span>
-                  <label class="form-check-label me-auto ms-2" for="firstCheckbox"
+                  <label
+                    class="form-check-label me-auto ms-2"
+                    for="firstCheckbox"
                     >GameType 1</label
                   >
                   <input
@@ -84,9 +82,14 @@
                     id="firstCheckbox"
                   />
                 </li>
-                <li class="dropdown-item d-flex justify-content-between" href="#">
+                <li
+                  class="dropdown-item d-flex justify-content-between"
+                  href="#"
+                >
                   <span class="badge text-bg-primary rounded-pill">8</span>
-                  <label class="form-check-label me-auto ms-2" for="firstCheckbox"
+                  <label
+                    class="form-check-label me-auto ms-2"
+                    for="firstCheckbox"
                     >GameType 2</label
                   >
                   <input
@@ -96,9 +99,14 @@
                     id="firstCheckbox"
                   />
                 </li>
-                <li class="dropdown-item d-flex justify-content-between" href="#">
+                <li
+                  class="dropdown-item d-flex justify-content-between"
+                  href="#"
+                >
                   <span class="badge text-bg-primary rounded-pill">22</span
-                  ><label class="form-check-label me-auto ms-2" for="firstCheckbox"
+                  ><label
+                    class="form-check-label me-auto ms-2"
+                    for="firstCheckbox"
                     >GameType 3</label
                   >
                   <input
@@ -111,7 +119,7 @@
               </ul>
             </div>
             <button
-              id="export-btn"
+              id="Search-btn"
               class="btn btn-sm btn-outline-secondary bi bi-search"
             >
               <span class="visually-hidden">Search Modal</span>
@@ -148,6 +156,6 @@
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
-    <script src="js/app.js"></script>
+    <script type="module" src="js/app.js"></script>
   </body>
 </html>
