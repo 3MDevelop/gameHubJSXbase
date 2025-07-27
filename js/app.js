@@ -1,3 +1,4 @@
 console.info('js loaded !!')
-import gCard from './components/gCard'; 
+import GCard from './components/GCard'; 
 
+console.info(GCard)
